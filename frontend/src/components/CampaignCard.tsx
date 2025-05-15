@@ -1,10 +1,9 @@
 import { useState } from 'react';
 import { ethers, BrowserProvider, parseUnits } from 'ethers';
 import { useAccount, useConnect } from 'wagmi';
-import { injected } from 'wagmi/connectors';
 import IDRX_ABI from '../abi/IDRXabi.json';
 import { getContract } from '../abi/contract';
-// import { BigNumber } from 'ethers';
+
 
 declare global {
   interface Window {
@@ -39,7 +38,7 @@ export const CampaignCard: React.FC<CampaignCardProps> = ({
   const [pledged, setPledged] = useState(initialPledged);
   const [isLoading, setIsLoading] = useState(false);
   const { address } = useAccount();
-  const { connect } = useConnect();
+  useConnect();
 
   const progress = Math.min((pledged / goal) * 100, 100);
 

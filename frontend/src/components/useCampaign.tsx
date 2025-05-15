@@ -1,12 +1,10 @@
 // hooks/useCampaigns.ts
 import { useEffect, useState } from 'react';
-import { ethers, BrowserProvider, formatUnits } from 'ethers';
+import { BrowserProvider, formatUnits } from 'ethers';
 import { getContract } from '../abi/contract';
 import type { CampaignCardProps } from '../components/CampaignCard';
-import { error } from 'console';
 // @ts-ignore
 import Crowdfunding from '../abi/Crowdfunding.json';
-import type { isImageUri } from 'node_modules/viem/_types/utils/ens/avatar/utils';
 
 declare global {
   interface Window {
@@ -53,11 +51,6 @@ export const useCampaigns = () => {
     fetchCampaigns();
   }, []);
 
-  interface AbiFunction {
-    name: string;
-    type: string;
-    [key: string]: any;
-  }
 
   return { campaigns, loading, error: null };
 };

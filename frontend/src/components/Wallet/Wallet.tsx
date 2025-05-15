@@ -9,7 +9,7 @@ export function Wallet() {
       <h2 className="text-2xl font-semibold mb-4">Wallet Integration</h2>
 
       <ConnectButton.Custom>
-        {({ account, chain, openConnectModal, openProfileModal, isConnected }) => {
+        {({ account, openConnectModal, openProfileModal, isConnected }) => {
           return (
             <div>
               {isConnected && account ? (

@@ -1,7 +1,5 @@
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import { ethers } from 'ethers';
-import { useAccount } from 'wagmi';
 import { useWalletClient } from 'wagmi';
 import { getContract } from '../abi/contract';
 
@@ -34,7 +32,6 @@ interface CampaignData {
 type CampaignFormField = keyof CampaignForm;
 
 export function CampaignCreate({ onCreate }: { onCreate: (campaign: CampaignData) => void }) {
-  const navigate = useNavigate();
   const [isLoading, setIsLoading] = useState(false);
   const [form, setForm] = useState<CampaignForm>({
     title: '',
@@ -44,7 +41,7 @@ export function CampaignCreate({ onCreate }: { onCreate: (campaign: CampaignData
     goal: '',
   });
 
-  const { address } = useAccount();
+  // const { address } = useAccount();
   const { data: walletClient } = useWalletClient();
 
   const handleFormChange = (
