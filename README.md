@@ -1,3 +1,8 @@
+## Screenshot
+
+![Tampilan Aplikasi](https://github.com/Janatulikzan/fundLsk/blob/main/screencapture-localhost-5173-2025-05-15-16_38_19.png)
+
+
 # FundLsk
 
 FundLsk adalah platform crowdfunding berbasis Web3 yang memungkinkan siapa saja membuat dan mendanai kampanye menggunakan token IDRX.
