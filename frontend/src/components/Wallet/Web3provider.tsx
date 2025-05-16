@@ -12,7 +12,7 @@ const config = defaultConfig({
   appName: "Xellar",
   walletConnectProjectId,
   xellarAppId,
-  xellarEnv: "sandbox",
+  xellarEnv: "production",
   chains: [liskSepolia],
 }) as Config;
 
