@@ -3,7 +3,7 @@
 ![Tampilan Aplikasi](https://github.com/Janatulikzan/fundLsk/blob/main/screencapture-localhost-5173-2025-05-15-16_38_19.png)
 
 
-![Link Aplikasi](https://fund-lsk.vercel.app/)
+[Link Project](https://fund-lsk.vercel.app/)
 
 
 # FundLsk
